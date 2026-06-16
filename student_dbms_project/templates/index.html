@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student DBMS Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0d6efd, #4e9fff);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Grid Layout */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Cards */
+        .col {
+            flex: 1 1 calc(25% - 20px);
+        }
+
+        .card {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Icons (simple text replacement) */
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .btn-primary { background: #0d6efd; }
+        .btn-success { background: #198754; }
+        .btn-warning { background: #ffc107; color: black; }
+        .btn-danger  { background: #dc3545; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: gray;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>🎓 Student DBMS</h1>
+        <p>Manage Students, Attendance, Results & Fees</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <div class="icon">👨‍🎓</div>
+                <h3>Students</h3>
+                <a href="/students" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Attendance</h3>
+                <a href="/attendance" class="btn btn-success">Open</a>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Results</h3>
+                <a href="/results" class="btn btn-warning">Open</a>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="icon">💰</div>
+                <h3>Fees</h3>
+                <a href="/fees" class="btn btn-danger">Open</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <small>© 2026 Student DBMS Project</small>
+    </footer>
+
+</div>
+
+</body>
+</html>
