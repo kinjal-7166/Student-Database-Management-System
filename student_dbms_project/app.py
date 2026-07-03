@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 db = mysql.connector.connect(
 host="localhost",
-user="root",
-password="Root@123",
+user="your_username",
+password="your_password",
 database="student_dbms"
 )
 
